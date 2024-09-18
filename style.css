@@ -68,10 +68,35 @@ ul {
   list-style-type: disc;
 }
 
-.nav {
+.nav-grid {
   list-style-type: none;
   text-align: center;
   padding-left: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 0;
+  gap: 20px;
+}
+
+figure {
+  height: 160px;
+  width: 240px;
+  position: relative;
+}
+
+figure>img {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(245, 245, 220, 0.561);
 }
 
 img {
