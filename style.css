@@ -12,6 +12,14 @@ body {
   line-height: 1.375;
   color: firebrick;
   background-color: bisque;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  flex-grow: 1;
 }
 
 .container {
@@ -83,4 +91,15 @@ a {
 
 a:hover {
   color: red;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  box-shadow: rgba(0, 0, 0, 0.23) 0px -3px 6px, rgba(0, 0, 0, 0.16) 0px -3px 6px;
+}
+
+footer>p {
+  text-align: center;
 }
