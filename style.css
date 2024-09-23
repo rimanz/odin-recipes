@@ -83,12 +83,21 @@ figure {
   height: 160px;
   width: 240px;
   position: relative;
+  box-shadow: 0px 1px 2px 0px rgba(60, 64, 67, 0.3),
+    0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+    border: 4px solid transparent;
 }
 
-figure>img {
+figure:hover {
+  box-shadow: 0 26px 58px 0 rgba(0, 0, 0, 0.22),
+  0 5px 14px 0 rgba(0, 0, 0, 0.18);
+}
+
+figure > img {
   height: 100%;
   width: 100%;
   margin-bottom: 0;
+  box-shadow: none;
 }
 
 figcaption {
@@ -98,7 +107,7 @@ figcaption {
   width: 100%;
   height: 30px;
   line-height: 30px;
-  background-color: rgba(245, 245, 220, 0.561);
+  background-color: rgba(255, 228, 196, 0.79);
   font-weight: bold;
 }
 
@@ -109,9 +118,8 @@ img {
   height: auto;
   max-width: 400px;
   margin-bottom: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: 0 26px 58px 0 rgba(0, 0, 0, 0.22),
+  0 5px 14px 0 rgba(0, 0, 0, 0.18);
 }
 
 a {
